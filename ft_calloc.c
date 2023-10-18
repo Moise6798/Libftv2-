@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:38:19 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/18 13:01:31 by notzenbe         ###   ########.fr       */
+/*   Updated: 2023/10/18 13:39:20 by niotzenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,12 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	}
 	return (p);
 }
+
 void	*ft_calloc(size_t elemcount, size_t elemsize)
 {
 	char	*tab;
 	size_t	total_size;
-	
+
 	total_size = elemcount * elemsize;
 	*tab = malloc(total_size);
 	if (!tab)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 13:05:20 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/18 13:22:22 by notzenbe         ###   ########.fr       */
+/*   Updated: 2023/10/18 13:45:16 by niotzenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ char	*ft_strdup(const char *source)
 	int		i;
 	char	*tab;
 	int		len;
-	
+
 	i = 0;
 	len = 0;
 	while (source[len])

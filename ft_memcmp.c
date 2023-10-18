@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 11:00:20 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/18 11:28:54 by notzenbe         ###   ########.fr       */
+/*   Updated: 2023/10/18 13:43:16 by niotzenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_memcmp(const void *pointer1, const void *pointer2, size_t size)
 	*ptr1 = *pointer1;
 	*ptr2 = *pointer2;
 	i = 0;
-	while ((ptr1[i] && (ptr2[i]) && (i < size))
+	while ((ptr1[i] && (ptr2[i]) && (i < size)))
 	{
 		if (ptr1[i] != ptr2[i])
 			return (ptr1[i] - ptr2[i]);
