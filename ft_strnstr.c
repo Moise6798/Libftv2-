@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 11:06:26 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/18 13:46:18 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/18 19:54:32 by notzenbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	if (little[0] == '\0')

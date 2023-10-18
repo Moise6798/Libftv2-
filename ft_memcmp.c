@@ -3,21 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 11:00:20 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/18 13:43:16 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/18 19:45:13 by notzenbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
 int	ft_memcmp(const void *pointer1, const void *pointer2, size_t size)
 {
-	char	*ptr1;
-	char	*ptr2;
-	size_t	i;
+	const unsigned char	*ptr1;
+	const unsigned char	*ptr2;
+	size_t				i;
 
-	*ptr1 = *pointer1;
-	*ptr2 = *pointer2;
+	ptr1 = (const unsigned char *)pointer1;
+	ptr2 = (const unsigned char *)pointer2;
 	i = 0;
 	while ((ptr1[i] && (ptr2[i]) && (i < size)))
 	{

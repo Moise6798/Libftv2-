@@ -3,18 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:55:38 by niotzenb          #+#    #+#             */
-/*   Updated: 2023/10/16 14:58:06 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/18 20:41:55 by notzenbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
 	i = 0;
+	if (!str)
+		return (0);
 	while (str)
 		i++;
 	return (i);

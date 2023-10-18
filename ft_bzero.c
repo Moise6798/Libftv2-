@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 09:56:43 by niotzenb          #+#    #+#             */
-/*   Updated: 2023/10/17 10:06:50 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/18 19:55:27 by notzenbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 void	ft_bzero(void *ptr, size_t num)
 {
@@ -17,7 +19,7 @@ void	ft_bzero(void *ptr, size_t num)
 	int				value;
 
 	value = 0;
-	*p = (unsigned char *)ptr;
+	p = (unsigned char *)ptr;
 	i = 0;
 	while (i < num)
 	{

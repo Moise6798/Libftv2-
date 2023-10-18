@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:38:19 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/18 13:39:20 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/18 20:06:44 by notzenbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	unsigned char	*p;
 	size_t			i;
 
-	*p = (unsigned char *)ptr;
+	p = (unsigned char *)ptr;
 	i = 0;
 	while (i < num)
 	{
@@ -33,9 +33,9 @@ void	*ft_calloc(size_t elemcount, size_t elemsize)
 	size_t	total_size;
 
 	total_size = elemcount * elemsize;
-	*tab = malloc(total_size);
+	tab = malloc(total_size);
 	if (!tab)
 		return (0);
-	ft_memset(*tab, 0, total_size)
+	ft_memset(tab, 0, total_size);
 	return (tab);
 }

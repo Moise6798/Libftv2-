@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 10:26:03 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/18 13:46:32 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/18 20:01:59 by notzenbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strrchr(const char *str, int searchc)
 	while (str[i])
 	{
 		if (str[i] == searchc)
-			return (str + i);
+			return ((char *)str + i);
 		i--;
 	}
 	return (0);
