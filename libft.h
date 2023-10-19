@@ -6,7 +6,7 @@
 /*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 20:07:47 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/19 13:57:41 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/19 14:46:39 by niotzenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ char	*ft_strchr(const char *str, int searchc);
 char	*ft_strrchr(const char *str, int searchc);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *source);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
