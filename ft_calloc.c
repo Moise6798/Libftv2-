@@ -3,29 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:38:19 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/18 20:06:44 by notzenbe         ###   ########.fr       */
+/*   Updated: 2023/10/19 10:27:10 by niotzenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-void	*ft_memset(void *ptr, int value, size_t num)
-{
-	unsigned char	*p;
-	size_t			i;
-
-	p = (unsigned char *)ptr;
-	i = 0;
-	while (i < num)
-	{
-		p[i] = (unsigned char)value;
-		i++;
-	}
-	return (p);
-}
+#include "libft.h"
 
 void	*ft_calloc(size_t elemcount, size_t elemsize)
 {

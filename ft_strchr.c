@@ -3,23 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 10:26:35 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/18 19:52:43 by notzenbe         ###   ########.fr       */
+/*   Updated: 2023/10/19 10:53:22 by niotzenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strchr(const char *str, int searchc)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
+	while (*str != (unsigned char)searchc)
 	{
-		if (str[i] == searchc)
-			return ((char *)str + i);
-		i++;
+		if (!*str)
+			return (0);
+		str++;
 	}
-	return (0);
+	return ((char *)str);
 }
