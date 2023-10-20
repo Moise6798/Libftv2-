@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: notzenbe <notzenbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:38:19 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/19 14:07:30 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/20 08:26:40 by notzenbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t elemcount, size_t elemsize)
 	size_t	total_size;
 
 	if (elemcount == 0 || elemsize == 0)
-		return (0);
+		return (malloc(0));
 	if ((SIZE_MAX / elemcount < elemsize) || (SIZE_MAX / elemsize < elemcount))
 		return (0);
 	total_size = elemcount * elemsize;
