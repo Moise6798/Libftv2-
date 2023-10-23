@@ -6,7 +6,7 @@
 /*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 20:07:47 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/20 12:42:13 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/23 12:04:43 by niotzenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,14 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
+# include <limits.h>
 
 void	ft_bzero(void *ptr, size_t num);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putendl_fd(char *s, int fd);
 
 void	*ft_memset(void *ptr, int value, size_t num);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
@@ -47,6 +53,8 @@ char	*ft_strdup(const char *source);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s, char const *set);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 char	**ft_split(char const *s, char c);
 
