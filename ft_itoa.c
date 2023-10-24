@@ -6,7 +6,7 @@
 /*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 10:37:36 by niotzenb          #+#    #+#             */
-/*   Updated: 2023/10/23 11:47:51 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/24 15:01:35 by niotzenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,12 +61,12 @@ char	*ft_itoa(int n)
 	len = ft_len_count(nb);
 	if (nb == INT_MIN)
 	{
-		number = malloc(sizeof(char) * 12);
+		number = ft_calloc(sizeof(char), 12);
 		ft_strlcpy(number, "-2147483648", 12);
 		return (number);
 	}
 	if (nb != 0)
-		number = malloc(sizeof(char) * (len + 1));
+		number = ft_calloc(sizeof(char), (len + 1));
 	else
 		return (number = ft_strdup("0"));
 	if (!(number))
