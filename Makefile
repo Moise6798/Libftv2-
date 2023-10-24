@@ -8,6 +8,10 @@ SRCS			=	ft_isalnum.c ft_isprint.c ft_memcmp.c   \
 					ft_putstr_fd.c ft_putnbr_fd.c ft_putchar_fd.c ft_putendl_fd.c
 OBJS			= $(SRCS:.c=.o)
 
+BONUS			=
+
+BONUS_OBJS		= $(SRCSB:.c=.o)
+
 CC				= gcc
 RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror -I.
@@ -28,5 +32,8 @@ fclean:			clean
 				$(RM) $(NAME)
 
 re:				fclean $(NAME)
+
+bonus:			$(OBJS) $(BONUS_OBJS)
+				ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 .PHONY:			all clean fclean re bonus

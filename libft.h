@@ -6,7 +6,7 @@
 /*   By: niotzenb <niotzenb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 20:07:47 by notzenbe          #+#    #+#             */
-/*   Updated: 2023/10/23 13:18:24 by niotzenb         ###   ########.fr       */
+/*   Updated: 2023/10/24 15:22:43 by niotzenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,13 @@
 # include <stdlib.h>
 # include <stdint.h>
 # include <limits.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
 
 void	ft_bzero(void *ptr, size_t num);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
